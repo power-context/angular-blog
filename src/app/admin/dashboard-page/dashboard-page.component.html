@@ -16,7 +16,7 @@
             <tr *ngFor="let post of posts | searchPosts:searchStr; let idx = index">
                 <td>{{ idx + 1 }}</td>
                 <td>{{ post.author }}</td>
-                <td>{{ post.date | date:'medium' }}</td>
+                <td>{{ post.date | date:'medium':null:'en' }}</td>
                 <td>{{ post.title }}</td>
                 <td>
                     <button 
